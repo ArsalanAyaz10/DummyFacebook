@@ -6,7 +6,6 @@ export const fetchPosts = async (url) => {
             throw new Error(`Error: ${response.Error}`)
         }else{
             const data = await response.json();
-            
             //console.log(data.posts);
             return data.posts;
             

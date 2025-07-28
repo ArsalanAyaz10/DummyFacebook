@@ -28,6 +28,11 @@
       left: 50%;
       transform: translateX(-50%);
     }
+.post-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+}
 
     /* Sidebar Styles */
     .sidebar {
@@ -199,10 +204,15 @@
       </ul>
     </div>
 
-    <!-- Main Content -->
-    <main class="col-lg-7 px-4 py-4">
-      <!-- Content goes here -->
-    </main>
+<!-- Main Content -->
+<main class="col-lg-7 px-4 py-4">
+  <div class="container">
+    <div id="postsContainer" class="row gy-4">
+      <!-- Post cards will be injected here -->
+    </div>
+  </div>
+</main>
+
 
     <!-- Right Contacts Sidebar -->
     <div class="col-lg-3 d-none d-lg-block contacts-panel">
@@ -263,6 +273,7 @@
 
   </div>
 </div>
-<script type="module" src="scripts/app.js"></script>
+
+<script type="module" src="./Backend/app.js"></script>
 </body>
 </html>
